@@ -4,12 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.weiwei.microservice</groupId>
-	<artifactId>provide-movie</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>provider-movie-without-eureka</artifactId>
 	<packaging>jar</packaging>
 
-	<name>provider-movie</name>
-	<description>Demo project for Spring Boot</description>
+	<name>provider-movie-without-eureka</name>
+	<description>provider-movie-without-eureka</description>
 
 	<parent>
 		<groupId>com.github.weiwei02.microservice</groupId>
@@ -33,19 +32,11 @@
 			<artifactId>micro-service-data</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
+		<!--不依赖与eureka-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-eureka</artifactId>
+			<artifactId>spring-cloud-starter-ribbon</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-feign</artifactId>
-		</dependency>
-
 	</dependencies>
 
 

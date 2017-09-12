@@ -6,7 +6,7 @@
         <groupId>com.github.weiwei02.microservice</groupId>
         <artifactId>micro-service-parent</artifactId>
         <version>0.1</version>
-        <relativePath>../microserviceparent/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

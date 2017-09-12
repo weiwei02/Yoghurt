@@ -5,7 +5,7 @@ spring:
     name: provider-movie
 
 server:
-  port: 9003
+  port: 9010
 
 mybatis:
   mapperLocations: classpath:mybatis/mapper/*.xml

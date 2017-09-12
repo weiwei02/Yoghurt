@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: provider-movie-without-eureka
+
+server:
+  port: 9011
+
+mybatis:
+  mapperLocations: classpath:mybatis/mapper/*.xml
+mapper:
+    mappers:
+        - com.github.weiwei02.microservice.data.dao.SuperMapper
+    not-empty: false
+    identity: MYSQL
+
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
