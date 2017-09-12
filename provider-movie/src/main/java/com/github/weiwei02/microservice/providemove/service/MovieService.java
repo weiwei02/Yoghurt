@@ -1,4 +1,4 @@
-package com.github.weiwei02.microservice.providemove;
+package com.github.weiwei02.microservice.providemove.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

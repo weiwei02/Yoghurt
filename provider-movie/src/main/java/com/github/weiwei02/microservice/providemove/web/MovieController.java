@@ -1,5 +1,6 @@
-package com.github.weiwei02.microservice.providemove;
+package com.github.weiwei02.microservice.providemove.web;
 
+import com.github.weiwei02.microservice.providemove.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

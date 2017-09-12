@@ -1,8 +1,11 @@
-package com.github.weiwei02.microservice.providemove;
+package com.github.weiwei02.microservice.providemove.web;
 
+import com.github.weiwei02.microservice.providemove.service.UserFeignClient;
+import com.github.weiwei02.microservice.providemove.service.UserFeignClientWithFign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -11,12 +14,23 @@ import org.springframework.web.bind.annotation.RestController;
  * @sine 2017/9/12
  */
 @RestController
+@RequestMapping("/feign")
 public class MovieWithFeignController {
     @Autowired
     UserFeignClient userFeignClient;
 
-    @GetMapping("/user/feign/search/{username}")
+//    @Autowired
+    UserFeignClientWithFign userFeignClientWithFign;
+
+    @GetMapping("/user/search/{username}")
     public String findUserByFeign(@PathVariable("username") String username) {
         return userFeignClient.findByUserName(username);
     }
+
+    @GetMapping("/user/search2/{username}")
+    public String findUserByFeign2(@PathVariable("username") String username) {
+        return userFeignClientWithFign.findByUserName(username);
+    }
+
+
 }

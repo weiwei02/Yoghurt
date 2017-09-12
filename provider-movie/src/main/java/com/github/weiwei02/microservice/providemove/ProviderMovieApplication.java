@@ -5,9 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
 
 @SpringBootApplication
-@ComponentScan("com.github.weiwei02.microservice")
+@ComponentScan(basePackages = "com.github.weiwei02.microservice.*"
+)
 @EnableDiscoveryClient
 @EnableFeignClients
 public class ProviderMovieApplication {

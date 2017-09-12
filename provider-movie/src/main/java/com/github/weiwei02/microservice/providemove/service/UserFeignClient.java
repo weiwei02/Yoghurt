@@ -1,6 +1,9 @@
-package com.github.weiwei02.microservice.providemove;
+package com.github.weiwei02.microservice.providemove.service;
 
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.context.annotation.ComponentScans;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
