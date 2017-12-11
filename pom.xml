@@ -20,6 +20,8 @@
         <module>provider-movie</module>
         <module>provider-user</module>
         <module>provider-movie-without-eureka</module>
+        <module>provider-movie-hystrix</module>
+        <module>common-parent</module>
     </modules>
 
     <properties>
@@ -36,6 +38,7 @@
         <spring-cloud-starter-eureka.version>1.3.4.RELEASE</spring-cloud-starter-eureka.version>
         <spring-cloud-starter-ribbon.version>1.3.4.RELEASE</spring-cloud-starter-ribbon.version>
         <spring-cloud-starter-feign.version>1.3.4.RELEAS</spring-cloud-starter-feign.version>
+        <spring-boot-starter-security.version>1.2.1.RELEASE</spring-boot-starter-security.version>
     </properties>
 
     <dependencies>
@@ -112,6 +115,11 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-feign</artifactId>
+                <version>1.3.4.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-hystrix</artifactId>
                 <version>1.3.4.RELEASE</version>
             </dependency>
             <!--spring clould-->
